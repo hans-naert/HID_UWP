@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel x:Name="contentPanel" Margin="8,32,0,0" Height="608" VerticalAlignment="Top">
+            <TextBlock Text="Connect HID device and press &quot;Search HID&quot;" Margin="0,0,0,40"/>
+            <Button x:Name="searchHIDButton" Content="Search HID USB" Width="98" Click="searchHIDButtonClick" />
+            <TextBlock x:Name="USBFound"/>
+            <Button x:Name="outputReportButton" Content="Send output report" Margin="0,0,0,20" Click="outputReportButtonClick"/>
+            <Button x:Name="inputReportButton" Content="Get input report" Margin="0,0,0,20" Click="inputReportButtonClick"/>
+            <TextBlock x:Name="InputData"/>
+        </StackPanel>
     </Grid>
 </Page>
