@@ -38,7 +38,7 @@ namespace HID_UWP
         private async void enumerateHidDevices()
         {
             ushort vendorId = 0xC251;
-            ushort productId = 0x4301; ;//0x4C01;//0x4301;//0x4511;
+            ushort productId = 0x4501; ;//0x4C01;//0x4301;//0x4511;
             ushort usagePage = 0xFF00;
             ushort usageId = 0x0001;
 
